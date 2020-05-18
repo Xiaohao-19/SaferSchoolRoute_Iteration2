@@ -1,0 +1,28 @@
+﻿@model SSR.Models.KeyModel
+@{
+    ViewBag.Title = "Login";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+</head>
+<body>
+    <center>
+        <h2>Use The Key to Access The Website</h2>
+        @using (Html.BeginForm("Login", "Home", FormMethod.Post))
+        {
+            <ol>
+                <li>
+                    @Html.LabelFor(m => m.KeyValue)
+                    @Html.TextBoxFor(m => m.KeyValue)
+                    @Html.ValidationMessageFor(m => m.KeyValue)
+                </li>
+            </ol>
+            <input type="submit" value="Submit" />
+        }
+    </center>
+</body>
+</html>

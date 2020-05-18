@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "Home";
+<link href="~/Content/Home.css" rel="stylesheet" />
+}
+<div class="home_wel">
+    <p>IS YOUR ROUTE TO SCHOOL SAFE?</p>
+    <button>@Html.ActionLink("FIND OUT", "School_Statistic", "Home")</button>
+</div>
+<h2 class="service">Services</h2>
+<div class="row">
+    <div class="col-md-4">
+        <center><i class="fa fa-bar-chart"></i></center>
+        <h4>School Safety Dashboard</h4>
+        <p>
+            Use the dashboard to check the situations about route safety around
+            the schools. Statistic results will be shown based on historical data.
+        </p>
+        <center><button>@Html.ActionLink("LEARN MORE", "School_Statistic", "Home")</button></center>
+    </div>
+    <div class="col-md-4">
+        <center><i class="fa fa-gamepad"></i></center>
+        <h4>Safety Game</h4>
+        <p>
+            Teach kids about route safety in a different and interesting way. Two games available to
+            promote kids' safety awareness while riding bicycles. 
+        </p>
+        <center><button>@Html.ActionLink("LEARN MORE", "Game", "Home")</button></center>
+    </div>
+    <div class="col-md-4">
+        <center><i class="fa fa-book"></i></center>
+        <h4>Resources</h4>
+        <p>
+            All kinds of resources provided here to give tips about keeping safe on school routes.
+            Explore anything you are interested in and enjoy your learning!
+        </p>
+        <center><button>@Html.ActionLink("LEARN MORE", "blog", "Home")</button></center>
+    </div>
+</div>
+
+
+
+
+
+
+

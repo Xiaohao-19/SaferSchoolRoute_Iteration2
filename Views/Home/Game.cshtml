@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Ride2School";
+    <link href="~/Content/Game1.css" rel="stylesheet" />
+}
+<div class="title1">To get better performance, please use PC with keyboard.</div>
+<div class="container">
+    <center><iframe class="responsive-iframe" src="https://g.evkgame.cn/140467"></iframe></center>
+</div>
+<div class="next">
+    <button>@Html.ActionLink(HttpUtility.HtmlDecode("Try Another Game&raquo;"), "Game2", "Home")</button>
+</div>

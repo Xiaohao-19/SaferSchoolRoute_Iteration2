@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Learning";
+    <link href="~/Content/Learning.css" rel="stylesheet" />
+}
+<div class="learning_wel">
+    <p>Learning About Route Safety</p>
+</div>
+<h2 class="info">Information</h2>
+<div class="row">
+    <div class="col-md-4">
+        <center><i class="fa fa-street-view"></i></center>
+        <h4>Pedestrian Safety</h4>
+        <p>
+            About Pedestrian safety. Use the quiz in the end to test your konwledge.
+        </p>
+        <center><button>@Html.ActionLink("LEARN MORE", "Pedestrain", "Home")</button></center>
+    </div>
+    <div class="col-md-4">
+        <center><i class="fa fa-bicycle"></i></center>
+        <h4>Bicycle Safety</h4>
+        <p>
+            About Bicycle safety. Use the quiz in the end to test your konwledge.
+        </p>
+        <center><button>@Html.ActionLink("LEARN MORE", "Bicycle", "Home")</button></center>
+    </div>
+    <div class="col-md-4">
+        <center><i class="fa fa-cab"></i></center>
+        <h4>Road Safety</h4>
+        <p>
+            About road safety. Use the quiz in the end to test your konwledge.
+        </p>
+        <center><button>@Html.ActionLink("LEARN MORE", "Road", "Home")</button></center>
+    </div>
+</div>
+

@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+    <link href="~/Content/Dashboard.css" rel="stylesheet" />  
+}
+<div class="stheading">Is your school route safe?</div>
+<hr />
+<div class="container">
+    <center><iframe class="responsive-iframe" width="1000" height="550" src="https://public.tableau.com/views/Statistics_15868428493240/Dashboard23?:display_count=y&publish=yes&:origin=viz_share_link?:showVizHome=no&:embed=true"></iframe></center>
+</div>
+<div class="wordcloud" id="canvas-container" align="center">
+    <p class="intro">School routes with more accidents in the past 5 years:</p>
+    <canvas id="canvas" width="1500" height="1000"></canvas>
+</div>
+<p class="go">Need Route Safety Resources?</p>
+<center><button class="stbutton">@Html.ActionLink(HttpUtility.HtmlDecode("Go&raquo;"), "blog", "Home")</button></center>
+<script type="text/javascript">
+    var result = @Html.Raw(ViewBag.DataPoints);
+        var dataPoints =[];
+    for (var i = 0; i < result.length; i++){
+            var point = [result[i].Name, result[i].Num];
+                dataPoints.push(point);
+    }
+    var options = eval({
+        "list":dataPoints,
+        "gridSize": 16, // size of the grid in pixels
+        "weightFactor": 0.06, // number to multiply for size of each word in the list
+        "fontWeight": 'bold', // 'normal', 'bold' or a callback
+        "fontFamily": 'Times, serif', // font to use
+        "color": 'random-dark', // 'random-dark' or 'random-light'
+        "backgroundColor": 'white', // the color of canvas
+        "rotateRatio": 1 // probability for the word to rotate. 1 means always rotate
+    });
+    var canvas = document.getElementById('canvas');
+    WordCloud(canvas, options);
+</script>
+
