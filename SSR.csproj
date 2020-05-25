@@ -209,8 +209,8 @@
       <DependentUpon>HatModel.edmx</DependentUpon>
     </Content>
     <Content Include="pdfFile\Bicycle Checklist.pdf" />
-    <Content Include="pdfFile\Road Safety Checklist.pdf" />
     <Content Include="pdfFile\Pedestrian safety checklist.pdf" />
+    <Content Include="pdfFile\Road Safety Checklist.pdf" />
     <None Include="Properties\PublishProfiles\saferschoolroutes - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\saferschoolroutes - Web Deploy1.pubxml" />
     <None Include="Properties\PublishProfiles\SaferSchoolRoutetlob - Web Deploy.pubxml" />

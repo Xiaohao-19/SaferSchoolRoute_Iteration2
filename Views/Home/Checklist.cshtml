@@ -2,13 +2,45 @@
     ViewBag.Title = "Safety Checklist";
 }
 <style>
-    .check_wel{background:url(../../Images/check.jpg);background-size:cover;background-position:center;text-align:center;color:#fff;padding-top:250px;font-weight:700;padding-bottom:25%;font-family:'Kaushan Script';font-size:50px}.check_wel button{margin-top:20px;font-size:20px;text-align:center;font-family:'roboto san serif';background-color:#343a40;border:none;display:block}.check_wel button:hover{background-color:#fec503}.check_wel a{color:#fff}.check_wel a:hover{color:#fff}
+    .check_wel {
+        background: url(../../Images/check.jpg);
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        color: #fff;
+        padding-top: 250px;
+        font-weight: 800;
+        padding-bottom: 25%;
+        font-size: 50px
+    }
+
+        .check_wel button {
+            margin-top: 20px;
+            font-size: 25px;
+            text-align: center;
+            font-family: 'roboto san serif';
+            background-color: #343a40;
+            border: none;
+            display: block
+        }
+
+            .check_wel button:hover {
+                background-color: #fec503
+            }
+
+        .check_wel a {
+            color: #fff
+        }
+
+            .check_wel a:hover {
+                color: #fff
+            }
 </style>
 <div class="check_wel">
     <p>Safety Checklist</p>
-    <center><button style="margin-top:40px"><a href="~/pdfFile/Bicycle Checklist.pdf">Bicycle Safety Checklist</a></button></center>
-    <center><button><a href="~/pdfFile/Pedestrian safety checklist.pdf">Pedestrain Safety Checklist</a></button></center>
-    <center><button><a href="~/pdfFile/Road Safety Checklist.pdf">Road Safety Checklist</a></button></center>
+    <center><button style="margin-top:40px"><a href="~/pdfFile/Bicycle Checklist.pdf" target="_blank">Bicycle Safety Checklist</a></button></center>
+    <center><button><a href="~/pdfFile/Pedestrian safety checklist.pdf" target="_blank">Pedestrain Safety Checklist</a></button></center>
+    <center><button><a href="~/pdfFile/Road Safety Checklist.pdf" target="_blank">Road Safety Checklist</a></button></center>
 </div>
 
 
